@@ -1,0 +1,49 @@
+.header {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    max-width: 1336px;
+    padding: 0 48px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1336px;
+    padding: 0 48px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &__logo {
+        a {
+            color: red;
+        }
+    }
+
+    &__left {
+        width: 50%
+    }
+
+    &__right {
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                margin-right: 16px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

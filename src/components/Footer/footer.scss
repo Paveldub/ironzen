@@ -1,0 +1,30 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #2d3039;
+    padding: 15px 25px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        width: 50%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}
