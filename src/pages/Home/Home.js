@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from "framer-motion"
 import mobileScreen from '../../utils/images/reflectly_screens.png'
+import iosButton from '../../utils/images/ios-button.svg'
+import googlePlay from '../../utils/images/google-play.png'
+
 import './home.scss'
 
 const divStyle = {
@@ -28,7 +31,17 @@ export const Home = () => {
                   <h1>The World's First Intelligent Journal</h1>
                   <p>Reflectly is a journal utilizing artificial intelligence to help you structure and reflect upon your daily thoughts and problems.</p>
                   <span>Your personal mental health companion.</span>
+                  <div className="button">
+                  <a href="ios">
+                    <img src={iosButton} alt="ios" />
+                  </a>
+                  <a href="android">
+                  <img src={googlePlay} alt="google-play" />
+                </a>
+                </div>
               </div>
+
+         
 
               <div className="home-page__right">
                 <img src={mobileScreen} alt={'mobileScreen'} className="home-page__right-img" />
